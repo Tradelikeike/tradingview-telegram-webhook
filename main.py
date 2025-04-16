@@ -1,6 +1,5 @@
 from flask import Flask, request
 from telegram import Bot
-from telegram.request import HTTPXRequest
 import json
 import os
 
@@ -10,8 +9,8 @@ app = Flask(__name__)
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "7821525599:AAHaVtzLI6hLoRaEce3gKPkYby5Vk7ujXz0")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-1002545667267")
 
-# Initialize the Telegram bot with a synchronous HTTPXRequest
-bot = Bot(token=TELEGRAM_TOKEN, request=HTTPXRequest(http_version="1.1"))
+# Initialize the Telegram bot
+bot = Bot(token=TELEGRAM_TOKEN)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
