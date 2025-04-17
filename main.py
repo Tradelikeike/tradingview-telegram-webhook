@@ -30,7 +30,7 @@ def webhook():
             entry = close_price
             message = (
                 f"📈 *Buy Signal for {ticker}*\n\n"
-                f"📍 *Entry*: {entry} - {entry - 4}\n"
+                f"📍 *Entry*: {entry} - {entry - 2}\n"
                 f"🎯 *TP1*: {entry + 2}\n"
                 f"🎯 *TP2*: {entry + 4}\n"
                 f"🎯 *TP3*: {entry + 6}\n"
@@ -44,7 +44,7 @@ def webhook():
             entry = close_price
             message = (
                 f"📉 *Sell Signal for {ticker}*\n\n"
-                f"📍 *Entry*: {entry} - {entry + 4}\n"
+                f"📍 *Entry*: {entry} - {entry + 2}\n"
                 f"🎯 *TP1*: {entry - 2}\n"
                 f"🎯 *TP2*: {entry - 4}\n"
                 f"🎯 *TP3*: {entry - 6}\n"
