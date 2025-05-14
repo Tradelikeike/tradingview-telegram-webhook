@@ -37,6 +37,7 @@ def webhook():
                 f"🎯 *TP4*: {entry + 8}\n"
                 f"🛑 *SL*: {entry - 6}\n\n"
                 f"⚠️ Use proper risk management!\n"
+                f"🚨Account For & Subtract Spread from TP1\n"
                 f"📊 Layer your entries.\n"
                 f"💰 Send me all your profits to @tradelikeike"
             )
@@ -51,6 +52,7 @@ def webhook():
                 f"🎯 *TP4*: {entry - 8}\n"
                 f"🛑 *SL*: {entry + 6}\n\n"
                 f"⚠️ Use proper risk management!\n"
+                f"🚨Account For & Subtract Spread from TP1\n"
                 f"📊 Layer your entries.\n"
                 f"💰 Send me all your profits to @tradelikeike"
             )
